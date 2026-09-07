@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEXO — Nowoczesne produkty</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0b0b0f;
+            color: white;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #aaa;
+            font-size: 20px;
+        }
+
+        .products {
+            padding: 50px 8%;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .product {
+            background: #15151c;
+            border: 1px solid #272733;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            background: #222;
+        }
+
+        .product h3 {
+            margin: 18px 0 8px;
+        }
+
+        .price {
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .buy {
+            display: inline-block;
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buy:hover {
+            background: #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">VEXO</div>
+
+    <nav>
+        <a href="#produkty">Produkty</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>VEXO</h1>
+    <p>Discover what's next.</p>
+</section>
+
+<section class="products" id="produkty">
+
+    <h2>Nasze produkty</h2>
+
+    <div class="grid">
+
+        <div class="product">
+            <img src="https://via.placeholder.com/500x400" alt="Produkt VEXO">
+
+            <h3>Produkt #1</h3>
+
+            <p class="price">49,99 zł</p>
+
+            <a class="buy"
+               href="https://forms.google.com/"
+               target="_blank">
+                Kup teraz
+            </a>
+        </div>
+
+
+        <div class="product">
+            <img src="https://via.placeholder.com/500x400" alt="Produkt VEXO">
+
+            <h3>Produkt #2</h3>
+
+            <p class="price">69,99 zł</p>
+
+            <a class="buy"
+               href="https://forms.google.com/"
+               target="_blank">
+                Kup teraz
+            </a>
+        </div>
+
+
+        <div class="product">
+            <img src="https://via.placeholder.com/500x400" alt="Produkt VEXO">
+
+            <h3>Coming Soon</h3>
+
+            <p class="price">Wkrótce</p>
+
+            <a class="buy" href="#kontakt">
+                Dowiedz się więcej
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="kontakt">
+    <p>© 2026 VEXO. Wszystkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>
